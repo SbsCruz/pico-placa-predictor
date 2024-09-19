@@ -1,45 +1,46 @@
+// imports handlers and predictor
 const { handleTime, handleDate, handlePlate } = require('./src/handlers/handleInput');
 const { isAllowed } = require('./src/predictor');
 
 const main = async () => {
   let plate, time, date;
 
-  // Validar placa
+  // Validates plate
   while (true) {
     try {
       plate = await handlePlate();
-      console.clear(); // Limpiar la consola después de una entrada válida
-      break; // Salir del bucle si la placa es válida
+      console.clear();              // clears console so it looks cleaner
+      break;                        // gets out of the while loop once the user enter the plate
     } catch (error) {
       console.error(error.message);
     }
   }
 
-  // Validar fecha
+  // Validates date
   while (true) {
     try {
       date = await handleDate();
-      console.clear(); // Limpiar la consola después de una entrada válida
-      break; // Salir del bucle si la fecha es válida
+      console.clear();
+      break;
     } catch (error) {
       console.error(error.message);
     }
   }
 
-  // Validar hora
+  // Validates time
   while (true) {
     try {
       time = await handleTime();
-      console.clear(); // Limpiar la consola después de una entrada válida
-      break; // Salir del bucle si la hora es válida
+      console.clear();
+      break;
     } catch (error) {
       console.error(error.message);
     }
   }
 
-
+  // shows the user wheter he is able to drive or not
   const result = isAllowed(plate, date, time);
-  console.log(result ? "Si puede conducir" : "No puede conducir a esta hora. Lo sentimos.");
+  console.log(result ? "Si puede conducir, hágalo con cuidado." : "No puede conducir a esta hora. Lo sentimos.");
   process.exit();
 };
 
