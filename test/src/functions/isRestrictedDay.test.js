@@ -1,7 +1,7 @@
 const { isRestrictedDay } = require("../../../src/functions/isRestrictedDay")
 const { restrictedDays } = require("../../../src/data/restrictions")
 
-describe('Tests in IsRestrictedHour', () => {
+describe('Tests in isRestrictedDay', () => {
 
   test('should be Undefined', () => {
     const digitTest = 0

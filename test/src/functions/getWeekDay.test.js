@@ -1,6 +1,6 @@
 const { getWeekDay } = require("../../../src/functions//getWeekDay")
 
-describe('Tests in IsRestrictedHour', () => {
+describe('Tests in getWeekDay', () => {
 
   test('should not be null', () => {
     const dateTest = "13/09/2023"
