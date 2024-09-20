@@ -1,8 +1,9 @@
 # pico-placa-predictor
-
+[Sebastian Cruz](github.com/SbsCruz)
+ 
 This app allows users to check if they are able to be on the road or not, according to the rules of _Pico & Placa_ in Quito, Ecuador.
 
-It was developed with `JS + Node +Jest`
+It was developed with `JS + Node + Jest`
 
 ## Installation
 
@@ -13,7 +14,7 @@ _Note:_ You'll need __Node__ and __npm__ in order to install the project.
 ``` bash
 git clone https://github.com/SbsCruz/pico-placa-predictor
 cd pico-placa-predictor
-```z
+```
 
 2. __Install dependecies__
 
@@ -26,7 +27,6 @@ npm i
 ``` bash
 node index.js
 ```
-
 
 ## How to
 
