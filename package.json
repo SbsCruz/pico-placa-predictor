@@ -1,0 +1,25 @@
+{
+  "name": "pico-placa",
+  "version": "1.0.0",
+  "description": "pico-placa predictor for Quito, Ecuador",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll -- verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SbsCruz/pico-placa-predictor.git"
+  },
+  "author": "Sebastian Cruz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SbsCruz/pico-placa-predictor/issues"
+  },
+  "homepage": "https://github.com/SbsCruz/pico-placa-predictor#readme",
+  "dependencies": {
+    "jest": "^29.7.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.13"
+  }
+}
